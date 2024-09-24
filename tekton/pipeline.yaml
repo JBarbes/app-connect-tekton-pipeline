@@ -210,6 +210,8 @@ spec:
       params:
         - name: url
           value: "$(params.git-repository)"
+        - name: gitInitImage
+          value: "gcr.io/tekton-releases/github.com/tektoncd/pipeline/cmd/git-init:v0.40.2"
       workspaces:
         - name: output
           workspace: pipeline-shared-workspace
