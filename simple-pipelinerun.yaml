@@ -51,7 +51,7 @@ spec:
     - name: pipeline-shared-workspace
       volumeClaimTemplate:
         spec:
-          storageClassName: default # ibmc-block-gold
+          # storageClassName: default # ibmc-block-gold
           accessModes:
             - ReadWriteOnce
           resources:

@@ -202,20 +202,11 @@ spec:
 
   tasks:
 
-    # --------------------------------------------------------
-
-    - name: dummy-validate
-      taskRef:
-        name: mq-validate
-      workspaces:
-        - name: source
-          workspace: pipeline-shared-workspace
-
-
+  
     # --------------------------------------------------------
 
     - name: clone-source
-      runAfter: ["dummy-validate"]    
+    #  runAfter: ["dummy-validate"]    
       taskRef:
         name: git-clone-home
       params:
